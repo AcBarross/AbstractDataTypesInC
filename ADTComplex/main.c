@@ -34,10 +34,14 @@ int main() {
 	double modulus;
 	complexMod(c, &modulus);
 	printf("|c| = %.2f\n", modulus); 
+	PtComplex conj = complexConjugate(c);
+
+	complexPrint(conj);
 
 	complexDestroy(&a);
 	complexDestroy(&b);
 	complexDestroy(&c);
+	complexDestroy(&conj);
 
 	return EXIT_SUCCESS;
 }

@@ -104,3 +104,12 @@ void complexPrint(PtComplex w) {
     else
         printf("%.3f + %.3fi\n", w->real, w->imaginary);
 }
+
+// extras
+
+PtComplex complexConjugate(PtComplex c){
+    if(c == NULL) return NULL;
+
+    PtComplex conjugate = complexCreate(c->real, c->imaginary*-1);
+
+}

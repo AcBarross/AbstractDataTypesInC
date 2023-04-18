@@ -110,3 +110,8 @@ int complexArg (PtComplex w, double *argument);
 */
 void complexPrint(PtComplex c);
 
+
+//extras
+
+PtComplex complexConjugate(PtComplex c);
+

@@ -6,6 +6,8 @@ linkedlist:
 arraylist:
 	gcc -Wall -o prog -g main.c queueElem.c queueArrayList.c
 	
+valgrind:
+	leaks --atExit -- ./prog
 clean:
 	rm -f prog
 

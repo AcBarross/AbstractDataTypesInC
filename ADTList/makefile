@@ -6,5 +6,8 @@ arraylist:
 linkedlist:
 	gcc -Wall -o prog -g main.c listElem.c listLinkedList.c
 
+valgrind:
+	leaks --atExit -- ./prog
+
 clean:
 	rm -f ./prog
